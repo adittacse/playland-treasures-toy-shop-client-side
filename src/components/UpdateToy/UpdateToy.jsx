@@ -65,7 +65,7 @@ const UpdateToy = () => {
         }
         
         // send data to the server
-        fetch(`https://playland-treasures-server.vercel.app/toy/${_id}`, {
+        fetch(`https://playland-treasures-toy-shop-server-side.onrender.com/toy/${_id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"

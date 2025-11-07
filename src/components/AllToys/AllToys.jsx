@@ -10,7 +10,7 @@ const AllToys = () => {
     useTitle('All Toys');
     
     useEffect(() => {
-        fetch('https://playland-treasures-server.vercel.app/toys')
+        fetch('https://playland-treasures-toy-shop-server-side.onrender.com/toys')
             .then(res => res.json())
             .then(data => {
                 setToys(data);

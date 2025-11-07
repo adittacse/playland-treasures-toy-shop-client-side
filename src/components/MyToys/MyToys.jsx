@@ -10,7 +10,7 @@ const MyToys = () => {
     const [sortedToys, setSortedToys] = useState([]);
     useTitle("My Toys");
     
-    const url = `https://playland-treasures-server.vercel.app/toys?email=${user?.email}`;
+    const url = `https://playland-treasures-toy-shop-server-side.onrender.com/toys?email=${user?.email}`;
     useEffect( () => {
         fetch(url)
             .then(res => res.json())
@@ -30,7 +30,7 @@ const MyToys = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`https://playland-treasures-server.vercel.app/toys/${id}`, {
+                fetch(`https://playland-treasures-toy-shop-server-side.onrender.com/toys/${id}`, {
                     method: "DELETE"
                 })
                     .then(res => res.json())

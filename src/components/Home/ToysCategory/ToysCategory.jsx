@@ -9,7 +9,7 @@ const ToysCategory = () => {
     const [starWarsToys, setStarWarsToys] = useState([]);
     
     useEffect(() => {
-        fetch('https://playland-treasures-server.vercel.app/toys')
+        fetch('https://playland-treasures-toy-shop-server-side.onrender.com/toys')
             .then(response => response.json())
             .then(data => {
                 const avengersToysData = getRandomToysByCategory(data, "Avengers");

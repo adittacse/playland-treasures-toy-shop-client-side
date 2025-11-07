@@ -60,7 +60,7 @@ const AddToy = () => {
             description
         }
         
-        fetch("https://playland-treasures-server.vercel.app/toys", {
+        fetch("https://playland-treasures-toy-shop-server-side.onrender.com/toys", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
